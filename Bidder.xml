@@ -1,0 +1,15 @@
+<object-stream>
+  <com.example.auction.LinkedList_-node>
+    <contents class="com.example.auction.Bidder">
+      <Name>Emma Nolan</Name>
+      <Address>Dunmore</Address>
+      <tel>1234567890</tel>
+      <email>emmaNolan@gmail.com</email>
+      <list/>
+    </contents>
+    <outer-class>
+      <head reference="../.."/>
+      <current reference="../.."/>
+    </outer-class>
+  </com.example.auction.LinkedList_-node>
+</object-stream>

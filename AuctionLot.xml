@@ -1,0 +1,38 @@
+<object-stream>
+  <com.example.auction.LinkedList_-node>
+    <next>
+      <next>
+        <contents class="com.example.auction.AddAuctionLot">
+          <title>Vase</title>
+          <Description>glass</Description>
+          <type>ceramics</type>
+          <year>20th</year>
+          <Price>20</Price>
+          <url>file:/C:/Users/Emma/Pictures/wade-ceramic-figurines-for-auction.jpg</url>
+        </contents>
+        <outer-class>
+          <head reference="../../../.."/>
+          <current reference="../../../.."/>
+        </outer-class>
+      </next>
+      <contents class="com.example.auction.AddAuctionLot">
+        <title>Chest</title>
+        <Description>Wooden</Description>
+        <type>Furniture</type>
+        <year>20th</year>
+        <Price>15</Price>
+        <url>file:/C:/Users/Emma/Pictures/82e04f7c347b4dbc6aeb59cc1b1dcbc0.jpg</url>
+      </contents>
+      <outer-class reference="../next/outer-class"/>
+    </next>
+    <contents class="com.example.auction.AddAuctionLot">
+      <title>Earn</title>
+      <Description>Glass</Description>
+      <type>ceramics</type>
+      <year>90th</year>
+      <Price>25</Price>
+      <url>file:/C:/Users/Emma/Pictures/14677-_pair_of_ormolu_mounted_cloisonne_enamel_antique_meiji_vases_3-2000x.jpg</url>
+    </contents>
+    <outer-class reference="../next/next/outer-class"/>
+  </com.example.auction.LinkedList_-node>
+</object-stream>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.auction.AddBidController">
+   <children>
+      <ImageView fx:id="img"  fitHeight="225.0" fitWidth="266.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="296.0" layoutY="22.0" text="Bidder Name:" />
+      <Label layoutX="310.0" layoutY="63.0" text="Amount" />
+      <TextField fx:id="bD" onKeyPressed="#userEmail" layoutX="375.0" layoutY="18.0" />
+      <TextField fx:id="amount" onKeyTyped="#highestBid" layoutX="375.0" layoutY="59.0" />
+      <TextField fx:id="askPrice" layoutX="94.0" layoutY="243.0" />
+      <Label layoutX="29.0" layoutY="247.0" text="Asking Price:" />
+      <Button onAction="#submits" layoutX="368.0" layoutY="104.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="43.0" text="Add" />
+      <Button onAction="#withDrawBid" layoutX="443.0" layoutY="104.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Withdraw Bid" />
+      <Button onAction="#withDrawLot" layoutX="115.0" layoutY="279.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Withdraw Lot" />
+      <Button fx:id="r" onAction="#goBacks" layoutX="115.0" layoutY="360.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Return" />
+      <ListView fx:id="view" onMousePressed="#pic" layoutX="287.0" layoutY="189.0" prefHeight="160.0" prefWidth="118.0" />
+      <Label layoutX="41.0" layoutY="323.0" text="Current Highest Bid:" />
+      <Label fx:id="highestBid" layoutX="163.0" layoutY="323.0" prefHeight="17.0" prefWidth="118.0" />
+      <Label layoutX="299.0" layoutY="164.0" prefHeight="17.0" prefWidth="137.0" text="Table of Auction lots:" />
+      <ListView fx:id="view2" onMousePressed="#selectBid"  layoutX="430.0" layoutY="190.0" prefHeight="160.0" prefWidth="161.0" />
+      <Label layoutX="455.0" layoutY="164.0" prefHeight="17.0" prefWidth="95.0" text="Table of Bids:" />
+      <Button onAction="#table2" layoutX="463.0" layoutY="360.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Reload Table" />
+   </children>
+</AnchorPane>

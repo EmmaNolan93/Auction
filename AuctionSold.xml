@@ -1,0 +1,32 @@
+<object-stream>
+  <com.example.auction.LinkedList_-node>
+    <next>
+      <contents class="com.example.auction.SoldAuctionLot">
+        <title>System</title>
+        <type>Furniture</type>
+        <email>PatNolan@gmail.com</email>
+        <Description>:(</Description>
+        <year>20th</year>
+        <Price>225</Price>
+        <url>file:/C:/Users/Emma/Pictures/IMG_0478.jpg</url>
+      </contents>
+      <outer-class>
+        <head reference="../.."/>
+        <current reference="../.."/>
+      </outer-class>
+    </next>
+    <contents class="com.example.auction.SoldAuctionLot">
+      <title>Chest</title>
+      <type>Furniture</type>
+      <email>estherBoland@gmail.com</email>
+      <Description>Wooden</Description>
+      <year>20th</year>
+      <Price>500</Price>
+      <url>file:/C:/Users/Emma/Pictures/82e04f7c347b4dbc6aeb59cc1b1dcbc0.jpg</url>
+    </contents>
+    <outer-class>
+      <head reference="../.."/>
+      <current reference="../.."/>
+    </outer-class>
+  </com.example.auction.LinkedList_-node>
+</object-stream>

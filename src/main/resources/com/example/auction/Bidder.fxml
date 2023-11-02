@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="335.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.auction.BidderController">
+   <top>
+      <AnchorPane prefHeight="344.0" prefWidth="601.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="r" onAction="#goBacks" layoutX="72.0" layoutY="238.0" mnemonicParsing="false" text="Return" />
+            <Button layoutX="185.0" layoutY="238.0" mnemonicParsing="false" text="Cancel" />
+            <ListView fx:id="view" onMousePressed="#selectBid" layoutX="287.0" layoutY="6.0" prefHeight="249.0" prefWidth="313.0" />
+            <Button fx:id="Sub" layoutX="128.0" layoutY="200.0" mnemonicParsing="false" onAction="#submits" text="Sumbit" />
+            <Label layoutX="23.0" layoutY="43.0" prefHeight="18.0" prefWidth="73.0" text="Name:" />
+            <Label layoutX="23.0" layoutY="82.0" prefHeight="18.0" prefWidth="73.0" text="Address:" />
+            <Label layoutX="23.0" layoutY="117.0" prefHeight="18.0" prefWidth="73.0" text="Telephone:" />
+            <Label layoutX="23.0" layoutY="156.0" prefHeight="18.0" prefWidth="73.0" text="Email:" />
+            <CheckBox fx:id="check1" layoutX="262.0" layoutY="39.0" mnemonicParsing="false" />
+            <CheckBox fx:id="check2"  layoutX="262.0" layoutY="113.0" mnemonicParsing="false" />
+            <CheckBox fx:id="check3" layoutX="262.0" layoutY="152.0" mnemonicParsing="false" />
+            <Label layoutX="309.0" layoutY="304.0" text="Total Bidders:" />
+            <Label fx:id="total" layoutX="404.0" layoutY="304.0" />
+            <Label fx:id="added" layoutX="198.0" layoutY="206.0" prefHeight="18.0" prefWidth="73.0" />
+            <TextField fx:id="Name" onKeyTyped="#name"  layoutX="96.0" layoutY="39.0" />
+            <TextField fx:id="Address" layoutX="96.0" layoutY="78.0" />
+            <TextField fx:id="Tel" onKeyTyped="#phonenum" layoutX="96.0" layoutY="113.0" />
+            <TextField fx:id="Email" layoutX="96.0" layoutY="152.0" onKeyPressed="#userEmail"  />
+            <Button fx:id="return" layoutX="302.0" layoutY="262.0" minHeight="20.0" mnemonicParsing="false" onAction="#table" prefHeight="31.0" prefWidth="67.0" text="Reload" />
+            <Button fx:id="update" onAction="#update" layoutX="128.0" layoutY="288.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="74.0" text="Update" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

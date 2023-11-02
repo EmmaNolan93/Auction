@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.auction.Search">
+   <children>
+      <TextField fx:id="s" layoutX="97.0" layoutY="327.0" />
+      <ListView fx:id="table" onMousePressed="#bid" layoutX="34.0" layoutY="40.0" prefHeight="254.0" prefWidth="254.0" />
+      <ListView fx:id="table2" layoutX="300.0" layoutY="44.0" prefHeight="243.0" prefWidth="261.0" />
+      <Label layoutX="34.0" layoutY="331.0" prefHeight="17.0" prefWidth="45.0" text="Search" />
+      <Button onAction="#searchLot" layoutX="274.0" layoutY="327.0" mnemonicParsing="false" text="Search Lot" />
+      <Button onAction="#searchBidder" layoutX="367.0" layoutY="327.0" mnemonicParsing="false" text="Search Bidder" />
+      <Button fx:id="r" onAction="#goBacks" layoutX="534.0" layoutY="360.0" mnemonicParsing="false" text="Return" />
+      <Label layoutX="376.0" layoutY="15.0" prefHeight="17.0" prefWidth="71.0" />
+      <Label layoutX="136.0" layoutY="15.0" prefHeight="17.0" prefWidth="71.0" />
+   </children>
+</AnchorPane>
